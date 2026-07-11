@@ -3,15 +3,19 @@ import { Lecture, LectureCategory } from '@/types'
 const categoryLabel: Record<LectureCategory, string> = {
   education: '강의·워크숍',
   consulting: '컨설팅',
-  mentoring: '멘토링',
   medical: '병원 AX',
+  startup_mentor: '창업 평가·멘토링',
+  startup_lecture: '창업 강의',
+  career_lecture: '커리어 강의',
 }
 
 const categoryColor: Record<LectureCategory, string> = {
   education: 'bg-emerald-50 text-emerald-700',
   consulting: 'bg-amber-50 text-amber-700',
-  mentoring: 'bg-blue-50 text-blue-700',
   medical: 'bg-rose-50 text-rose-700',
+  startup_mentor: 'bg-violet-50 text-violet-700',
+  startup_lecture: 'bg-indigo-50 text-indigo-700',
+  career_lecture: 'bg-teal-50 text-teal-700',
 }
 
 export default function LectureCard({ lecture }: { lecture: Lecture }) {

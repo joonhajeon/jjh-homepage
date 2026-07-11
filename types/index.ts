@@ -1,4 +1,10 @@
-export type LectureCategory = 'education' | 'consulting' | 'mentoring' | 'medical'
+export type LectureCategory =
+  | 'education'
+  | 'consulting'
+  | 'medical'
+  | 'startup_mentor'
+  | 'startup_lecture'
+  | 'career_lecture'
 
 export interface Lecture {
   id: string

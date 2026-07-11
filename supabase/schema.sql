@@ -3,7 +3,7 @@ create table lectures (
   title text not null,
   organization text not null,
   date date not null,
-  category text not null check (category in ('education', 'consulting', 'mentoring', 'medical')),
+  category text not null check (category in ('education', 'consulting', 'medical', 'startup_mentor', 'startup_lecture', 'career_lecture')),
   description text not null,
   participants integer,
   created_at timestamptz default now()
@@ -21,7 +21,8 @@ create table contacts (
 );
 
 insert into lectures (title, organization, date, category, description, participants) values
-('AI 바이브코딩 실전 워크숍', '자체 개최 (강남)', '2026-07-10', 'education', '비개발자 대상 Claude Code + VS Code 환경 세팅부터 실제 서비스 배포까지', 4),
-('바이브코딩 1:1 과외', '국제인공지능윤리협회 이사장', '2026-06-15', 'education', '협회 이사장 대상 바이브코딩 개인 과외 진행', 1),
-('고려대 진로 특강', '고려대학교', '2026-03-01', 'education', '고려대 학생 대상 AI 시대 커리어 전략 특강', 80),
-('바이브코딩 1:1 과외 (경영진)', '스타트업 대표', '2026-05-20', 'education', '스타트업 대표 대상 바이브코딩 1:1 과외', 1);
+('업무자동화 바이브코딩 워크숍', '외부 업체와 연계하여 개최 (강남)', '2026-07-10', 'education', '직장인 대상 업무자동화를 위한 바이브코딩 실습. 최적의 환경 세팅부터 실제 자동화 툴 배포까지', null),
+('바이브코딩 1:1 과외', '인공지능 관련 협회 임원진', '2026-06-15', 'education', '협회 임원진 대상 바이브코딩 개인 과외 진행', null),
+('고려대 진로 특강', '고려대학교', '2026-03-01', 'career_lecture', '고려대 학생 대상 AI 시대 커리어 전략 특강', null),
+('바이브코딩 1:1 과외 (스타트업 대표)', '스타트업 대표', '2026-07-20', 'education', '스타트업 대표 대상 바이브코딩 1:1 과외. 주요 데이터 대시보드로 구현', null),
+('바이브코딩 1:1 과외 (대기업 임원)', '대기업 임원', '2026-07-25', 'education', '대기업 임원 대상 바이브코딩 1:1 과외. 실무 자동화 툴 직접 제작 및 조직 내 AI 도입 방향 논의', null);
