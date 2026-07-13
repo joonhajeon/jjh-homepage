@@ -49,6 +49,15 @@ const sampleLectures: Lecture[] = [
     created_at: '',
   },
   {
+    id: '27',
+    title: '기업 대표 대상 바이브코딩 워크숍',
+    organization: '중소기업 대표 모임',
+    date: '2026-07-28',
+    category: 'education',
+    description: '중소기업 대표님들 대상 바이브코딩 워크숍. AI 활용 경영 인사이트 공유 및 업무 자동화 툴 직접 제작 실습',
+    created_at: '',
+  },
+  {
     id: '26',
     title: '바이브코딩 1:1 과외 (대기업 임원)',
     organization: '대기업 임원',

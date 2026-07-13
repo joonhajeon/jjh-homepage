@@ -8,6 +8,15 @@ import Link from 'next/link'
 
 const sampleLectures: Lecture[] = [
   {
+    id: '27',
+    title: '기업 대표 대상 바이브코딩 워크숍',
+    organization: '중소기업 대표 모임',
+    date: '2026-07-28',
+    category: 'education',
+    description: '중소기업 대표님들 대상 바이브코딩 워크숍. AI 활용 경영 인사이트 공유 및 업무 자동화 툴 직접 제작 실습',
+    created_at: '',
+  },
+  {
     id: '26',
     title: '바이브코딩 1:1 과외 (대기업 임원)',
     organization: '대기업 임원',
@@ -23,15 +32,6 @@ const sampleLectures: Lecture[] = [
     date: '2026-07-20',
     category: 'education',
     description: '스타트업 대표 대상 바이브코딩 1:1 과외. 주요 데이터 대시보드로 구현',
-    created_at: '',
-  },
-  {
-    id: '1',
-    title: '업무자동화 바이브코딩 워크숍',
-    organization: '외부 업체와 연계하여 개최 (강남)',
-    date: '2026-07-10',
-    category: 'education',
-    description: '직장인 대상 업무자동화를 위한 바이브코딩 실습. 최적의 환경 세팅부터 실제 자동화 툴 배포까지',
     created_at: '',
   },
 ]
