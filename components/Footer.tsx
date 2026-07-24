@@ -7,8 +7,8 @@ export default function Footer() {
           <p className="text-xs">jiven924@gmail.com · 010-9810-9240</p>
         </div>
         <div className="flex gap-6 text-xs font-bold text-stone-500">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a>
+          <a href="https://www.linkedin.com/in/joonha/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+          <a href="https://www.youtube.com/@%EC%BB%A4%EB%A6%AC%EC%96%B4%EB%B0%B1%EA%B3%BC%EC%82%AC%EC%A0%84" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a>
         </div>
       </div>
     </footer>
