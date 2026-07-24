@@ -3,7 +3,7 @@ import Link from 'next/link'
 const services = [
   {
     id: 'coaching',
-    title: '바이브코딩 1:1 과외',
+    title: '바이브코딩 1:1 코칭',
     tag: '개인',
     tagColor: 'bg-emerald-50 text-emerald-700',
     desc: '비개발자 대상, 본인이 만들고 싶은 서비스를 직접 만들어가는 과정을 함께합니다.',
@@ -12,7 +12,7 @@ const services = [
       '업무 자동화 툴을 직접 만들고 싶은 분',
       '시도해봤지만 원하는 결과가 안 나와서 포기한 분',
     ],
-    process: ['현재 상황 및 목표 파악', 'Claude Code + VS Code 환경 세팅', '직접 서비스 제작 및 배포', '이후 지속 과외 가능'],
+    process: ['현재 상황 및 목표 파악', 'Claude Code + VS Code 환경 세팅', '직접 서비스 제작 및 배포', '이후 지속 코칭 가능'],
   },
   {
     id: 'lecture',

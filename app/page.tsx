@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero'
 import WhyMe from '@/components/WhyMe'
 import Curriculum from '@/components/Curriculum'
+import Books from '@/components/Books'
 import LectureCard from '@/components/LectureCard'
 import { getSupabase, isSupabaseConfigured } from '@/lib/supabase'
 import { Lecture } from '@/types'
@@ -8,30 +9,30 @@ import Link from 'next/link'
 
 const sampleLectures: Lecture[] = [
   {
-    id: '27',
-    title: '기업 대표 대상 바이브코딩 워크숍',
-    organization: '중소기업 대표 모임',
-    date: '2026-07-28',
-    category: 'education',
-    description: '중소기업 대표님들 대상 바이브코딩 워크숍. AI 활용 경영 인사이트 공유 및 업무 자동화 툴 직접 제작 실습',
-    created_at: '',
-  },
-  {
     id: '26',
-    title: '바이브코딩 1:1 과외 (대기업 임원)',
+    title: '업무자동화를 위한 바이브코딩 강의',
     organization: '대기업 임원',
     date: '2026-07-25',
     category: 'education',
-    description: '대기업 임원 대상 바이브코딩 1:1 과외. 실무 자동화 툴 직접 제작 및 조직 내 AI 도입 방향 논의',
+    description: '대기업 임원 대상 바이브코딩 1:1 코칭. 실무 자동화 툴 직접 제작 및 조직 내 AI 도입 방향 논의',
     created_at: '',
   },
   {
     id: '4',
-    title: '바이브코딩 1:1 과외 (스타트업 대표)',
+    title: '업무자동화를 위한 바이브코딩 강의',
     organization: '스타트업 대표',
     date: '2026-07-20',
     category: 'education',
-    description: '스타트업 대표 대상 바이브코딩 1:1 과외. 주요 데이터 대시보드로 구현',
+    description: '스타트업 대표 대상 바이브코딩 1:1 코칭. 주요 데이터 대시보드로 구현',
+    created_at: '',
+  },
+  {
+    id: '1',
+    title: '업무자동화 바이브코딩 워크숍',
+    organization: '직장인 대상',
+    date: '2026-07-10',
+    category: 'education',
+    description: '직장인 대상 업무자동화를 위한 바이브코딩 실습. 최적의 환경 세팅부터 실제 자동화 툴 배포까지',
     created_at: '',
   },
 ]
@@ -75,6 +76,8 @@ export default async function HomePage() {
       <WhyMe />
 
       <Curriculum />
+
+      <Books />
 
       <section className="max-w-5xl mx-auto px-6 py-16 border-t border-stone-100">
         <div className="flex items-end justify-between mb-8">

@@ -2,7 +2,7 @@
 import { useState } from 'react'
 
 const inquiryTypes = [
-  { value: 'coaching', label: '바이브코딩 1:1 과외', desc: '개인 맞춤 과외' },
+  { value: 'coaching', label: '바이브코딩 1:1 코칭', desc: '개인 맞춤 코칭' },
   { value: 'lecture', label: '기업·기관 강의 요청', desc: '사내 교육·외부 워크숍' },
   { value: 'medical_consulting', label: '병원 AX 컨설팅', desc: '병원 업무 자동화' },
   { value: 'ax_consulting', label: 'AX 컨설팅', desc: '기업 AI 전환 컨설팅' },

@@ -11,7 +11,7 @@ const notoSansKR = Noto_Sans_KR({
 
 export const metadata: Metadata = {
   title: '전준하 | AI 강의·컨설팅',
-  description: '엔지니어·컨설턴트 출신이 가르치는 AI 바이브코딩. 기업 강의, 병원 AX 컨설팅, 1:1 과외.',
+  description: '엔지니어·컨설턴트 출신이 가르치는 AI 바이브코딩. 기업 강의, 병원 AX 컨설팅, 1:1 코칭.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
