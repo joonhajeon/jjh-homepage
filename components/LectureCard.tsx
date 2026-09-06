@@ -2,6 +2,7 @@ import { Lecture, LectureCategory } from '@/types'
 
 const categoryLabel: Record<LectureCategory, string> = {
   education: '강의·워크숍',
+  ai_advisory: 'AI활용 코칭 (Executive)',
   consulting: '컨설팅',
   medical: '병원 AX',
   startup_mentor: '창업 평가·멘토링',
@@ -11,6 +12,7 @@ const categoryLabel: Record<LectureCategory, string> = {
 
 const categoryColor: Record<LectureCategory, string> = {
   education: 'bg-emerald-50 text-emerald-700',
+  ai_advisory: 'bg-sky-50 text-sky-700',
   consulting: 'bg-amber-50 text-amber-700',
   medical: 'bg-rose-50 text-rose-700',
   startup_mentor: 'bg-violet-50 text-violet-700',

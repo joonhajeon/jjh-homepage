@@ -23,6 +23,7 @@ export async function POST(req: NextRequest) {
 
   const typeLabel: Record<string, string> = {
     coaching: '1:1 코칭',
+    ai_advisory: 'AI활용 코칭(Executive)',
     lecture: '기업/기관 강의',
     medical_consulting: '병원 AX 컨설팅',
     ax_consulting: 'AX 컨설팅',

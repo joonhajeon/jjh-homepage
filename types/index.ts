@@ -1,5 +1,6 @@
 export type LectureCategory =
   | 'education'
+  | 'ai_advisory'
   | 'consulting'
   | 'medical'
   | 'startup_mentor'
@@ -23,7 +24,7 @@ export interface ContactSubmission {
   email: string
   phone: string
   organization?: string
-  inquiry_type: 'coaching' | 'lecture' | 'medical_consulting' | 'ax_consulting' | 'other'
+  inquiry_type: 'coaching' | 'ai_advisory' | 'lecture' | 'medical_consulting' | 'ax_consulting' | 'other'
   message: string
   created_at: string
 }
