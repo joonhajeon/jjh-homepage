@@ -5,7 +5,7 @@ export default function PrepPage() {
     <div className="max-w-3xl mx-auto px-6 pt-16 pb-24">
       <p className="text-xs font-bold text-emerald-600 tracking-widest uppercase mb-4">Prep</p>
       <h1 className="text-4xl font-black text-stone-900 mb-3 tracking-tight break-keep">
-        수업 전, 이 4가지만 설치해주세요
+        수업 전, 이 5가지만 설치해주세요
       </h1>
       <p className="text-stone-500 mb-14 font-medium break-keep">
         당일 실습 시간을 확보하기 위한 최소 준비물입니다. 순서대로 하시면 20분이면 충분합니다.
@@ -41,10 +41,27 @@ export default function PrepPage() {
           </div>
         </div>
 
-        {/* 2. VS Code */}
+        {/* 2. Node.js */}
         <div className="bg-white border border-stone-100 rounded-xl p-7">
           <div className="flex items-baseline gap-2.5 mb-3">
             <span className="text-xs font-black text-stone-300 tabular-nums">02</span>
+            <h2 className="text-lg font-black text-stone-900 tracking-tight">Node.js</h2>
+          </div>
+          <ul className="flex flex-col gap-2 text-sm text-stone-600 font-medium">
+            <li className="flex gap-2">
+              <span className="text-stone-300 flex-shrink-0">—</span>
+              구글에서 <b className="font-black text-stone-800">&ldquo;Node.js 설치&rdquo;</b> 검색 → 검색 결과 중 <b className="font-black text-stone-800">&ldquo;Node.js® 다운로드&rdquo;</b>라고 되어 있는 것을 클릭
+            </li>
+            <li className="flex gap-2">
+              <span className="text-stone-300 flex-shrink-0">—</span>다운로드된 설치파일 실행 → 기본값 그대로 &ldquo;Next&rdquo;만 눌러서 설치
+            </li>
+          </ul>
+        </div>
+
+        {/* 3. VS Code */}
+        <div className="bg-white border border-stone-100 rounded-xl p-7">
+          <div className="flex items-baseline gap-2.5 mb-3">
+            <span className="text-xs font-black text-stone-300 tabular-nums">03</span>
             <h2 className="text-lg font-black text-stone-900 tracking-tight">VS Code</h2>
           </div>
           <ul className="flex flex-col gap-2 text-sm text-stone-600 font-medium">
@@ -63,10 +80,10 @@ export default function PrepPage() {
           </ul>
         </div>
 
-        {/* 3. Claude Code CLI */}
+        {/* 4. Claude Code CLI */}
         <div className="bg-white border border-stone-100 rounded-xl p-7">
           <div className="flex items-baseline gap-2.5 mb-3">
-            <span className="text-xs font-black text-stone-300 tabular-nums">03</span>
+            <span className="text-xs font-black text-stone-300 tabular-nums">04</span>
             <h2 className="text-lg font-black text-stone-900 tracking-tight">Claude Code CLI</h2>
           </div>
           <p className="text-sm text-stone-500 font-medium leading-relaxed mb-5 break-keep">
@@ -151,10 +168,10 @@ export default function PrepPage() {
           </p>
         </div>
 
-        {/* 4. Typeless */}
+        {/* 5. Typeless */}
         <div className="bg-white border border-stone-100 rounded-xl p-7">
           <div className="flex items-baseline gap-2.5 mb-3">
-            <span className="text-xs font-black text-stone-300 tabular-nums">04</span>
+            <span className="text-xs font-black text-stone-300 tabular-nums">05</span>
             <h2 className="text-lg font-black text-stone-900 tracking-tight">Typeless</h2>
           </div>
           <ul className="flex flex-col gap-2 text-sm text-stone-600 font-medium">
@@ -180,6 +197,7 @@ export default function PrepPage() {
         <ul className="flex flex-col">
           {[
             'Claude 데스크톱 앱 설치 + 로그인 + 유료 플랜(Pro/Max) 결제 확인',
+            'Node.js 설치',
             'VS Code 설치',
             'Claude Code CLI 설치(Cowork와 함께) + claude --version 확인 + 로그인',
             'Typeless 설치',
