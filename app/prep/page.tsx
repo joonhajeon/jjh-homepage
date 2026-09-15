@@ -58,7 +58,12 @@ export default function PrepPage() {
           <ul className="flex flex-col gap-2 text-sm text-stone-600 font-medium">
             <li className="flex gap-2">
               <span className="text-stone-300 flex-shrink-0">—</span>
-              구글에서 <b className="font-black text-stone-800">&ldquo;Node.js 설치&rdquo;</b> 검색 → 검색 결과 중 <b className="font-black text-stone-800">&ldquo;Node.js® 다운로드&rdquo;</b>라고 되어 있는 것을 클릭
+              <span>
+                <a href="https://nodejs.org/ko/download" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-bold underline underline-offset-2 hover:opacity-80">
+                  nodejs.org/ko/download
+                </a>
+                에서 다운로드 및 설치
+              </span>
             </li>
             <li className="flex gap-2">
               <span className="text-stone-300 flex-shrink-0">—</span>다운로드된 설치파일 실행 → 기본값 그대로 &ldquo;Next&rdquo;만 눌러서 설치
@@ -139,33 +144,17 @@ export default function PrepPage() {
             </div>
           </div>
 
-          <p className="text-xs font-black text-stone-400 tracking-widest uppercase mb-3">2단계 · 에러가 나면</p>
-          <p className="text-sm text-stone-600 font-medium mb-3 flex gap-2">
-            <span className="text-stone-300 flex-shrink-0">—</span>당황하지 말고 에러 화면을 캡처해서 같은 Cowork 창에 붙여넣고 &ldquo;이런 에러가 났어&rdquo;라고 물어보세요.
+          <p className="text-sm text-stone-600 font-medium mb-4 flex gap-2">
+            <span className="text-stone-300 flex-shrink-0">—</span>화면에 <b className="font-black text-stone-800">&ldquo;Claude Code successfully installed!&rdquo;</b> 같은 설치 성공 메시지가 뜨면 끝입니다. 바로 이어서 버전을 확인하거나 로그인해보지 않으셔도 됩니다 — 설치 직후엔 확인이 안 되는 것처럼 보일 때가 있는데, 그래도 실제로는 정상적으로 설치된 경우가 대부분입니다.
           </p>
-          <div className="flex gap-2.5 p-3.5 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 font-medium mb-6">
+
+          <p className="text-xs font-black text-stone-400 tracking-widest uppercase mb-3">에러가 나면</p>
+          <p className="text-sm text-stone-600 font-medium mb-3 flex gap-2">
+            <span className="text-stone-300 flex-shrink-0">—</span>성공 메시지 대신 에러 메시지가 뜨면, 화면을 캡처해서 같은 Cowork 창에 붙여넣고 &ldquo;이런 에러가 났어&rdquo;라고 물어보세요.
+          </p>
+          <div className="flex gap-2.5 p-3.5 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 font-medium mb-4">
             <span>🔁</span>
             <span>한 번에 끝날 수도, 몇 번 재시도할 수도 있습니다. <b className="font-black">둘 다 정상</b>입니다 — 반복하면 결국 설치됩니다.</span>
-          </div>
-
-          <p className="text-xs font-black text-stone-400 tracking-widest uppercase mb-3">3단계 · 확인 및 로그인</p>
-          <p className="text-sm text-stone-600 font-medium mb-3 flex gap-2">
-            <span className="text-stone-300 flex-shrink-0">—</span>창을 완전히 닫고 새로 하나 엽니다
-          </p>
-          <div className="relative mb-3">
-            <CopyButton text="claude --version" />
-            <pre className="bg-stone-900 text-stone-100 rounded-lg px-4 py-3.5 text-[13.5px] font-mono overflow-x-auto">
-              claude --version
-            </pre>
-          </div>
-          <p className="text-sm text-stone-600 font-medium mb-3 flex gap-2">
-            <span className="text-stone-300 flex-shrink-0">—</span>버전 숫자가 뜨면 완료. 이어서 로그인:
-          </p>
-          <div className="relative mb-4">
-            <CopyButton text="claude" />
-            <pre className="bg-stone-900 text-stone-100 rounded-lg px-4 py-3.5 text-[13.5px] font-mono overflow-x-auto">
-              claude
-            </pre>
           </div>
           <p className="text-sm text-stone-600 font-medium flex gap-2">
             <span className="text-stone-300 flex-shrink-0">—</span>
@@ -207,7 +196,7 @@ export default function PrepPage() {
             'Claude 데스크톱 앱 설치 + 로그인 + 유료 플랜(Pro/Max) 결제 확인',
             'Node.js 설치',
             'VS Code 설치',
-            'Claude Code CLI 설치(Cowork와 함께) + claude --version 확인 + 로그인',
+            'Claude Code CLI 설치(Cowork와 함께) — 성공 메시지 확인이면 충분',
             'Typeless 설치',
           ].map((item, i) => (
             <li key={i} className="flex items-start gap-2.5 py-2 text-sm text-stone-700 font-medium border-b border-stone-100 last:border-b-0">
