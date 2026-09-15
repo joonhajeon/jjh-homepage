@@ -32,12 +32,20 @@ export default function PrepPage() {
               <span className="text-stone-300 flex-shrink-0">—</span>설치 후 구글 계정으로 로그인
             </li>
           </ul>
-          <div className="mt-4 flex gap-2.5 p-3.5 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 font-medium">
-            <span>⚠️</span>
-            <span>
-              수업에서 쓰는 <b className="font-black">Code 기능은 Pro 또는 Max 유료 플랜(월 $20~)</b>이 있어야 사용 가능합니다.
-              무료 플랜으로는 당일 실습을 따라오기 어려우니, 아직 결제 전이시라면 미리 등록해주세요.
-            </span>
+          <div className="mt-4 flex flex-col gap-2.5 p-3.5 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-800 font-medium">
+            <p className="m-0">
+              <span className="mr-1.5">⚠️</span>
+              오늘 실습까지 직접 따라오시려면 <b className="font-black">Claude Pro 또는 Max 유료 플랜(월 $20~)</b>이 필요합니다.
+            </p>
+            <p className="m-0">다만 아래 두 경우엔 결제 없이 참석하셔도 됩니다.</p>
+            <ul className="flex flex-col gap-1.5 pl-4 list-disc">
+              <li>
+                <b className="font-black">챗GPT Plus나 제미나이 유료 플랜을 이미 쓰고 계신 분</b> — 클로드 대신 <b className="font-black">Codex</b>(챗GPT) 또는 <b className="font-black">Antigravity</b>(제미나이)를 설치하시면 비슷한 효과를 볼 수 있습니다. 다만 화면·명령어가 클로드와 달라서, 오늘 자료의 화면과 100% 똑같지는 않을 수 있고 설치 중 문제가 생겨도 그 자리에서 바로 도와드리긴 어렵습니다.
+              </li>
+              <li>
+                <b className="font-black">오늘은 개념만 구경하고 싶으신 분</b> — 결제 없이 오셔도 되고, 시연 위주로 따라오시면 됩니다.
+              </li>
+            </ul>
           </div>
         </div>
 
