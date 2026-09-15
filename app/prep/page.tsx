@@ -99,10 +99,18 @@ export default function PrepPage() {
             <span className="text-xs font-black text-stone-300 tabular-nums">04</span>
             <h2 className="text-lg font-black text-stone-900 tracking-tight">Claude Code CLI</h2>
           </div>
-          <p className="text-sm text-stone-500 font-medium leading-relaxed mb-5 break-keep">
-            이 단계가 가장 많이 막히는 부분입니다. 앞의 VS Code는 클릭 몇 번이면 끝나지만, 이건 터미널(명령어 창)에서
-            직접 설치해야 해서 컴퓨터 환경에 따라 다른 오류가 날 수 있습니다 — 100% 한 번에 끝난다고 장담은 못 드립니다.
+          <p className="text-sm text-stone-500 font-medium leading-relaxed mb-3 break-keep">
+            Claude Code CLI는 앞의 프로그램들과 달리 <b className="font-black text-stone-800">터미널(명령어 창)에서 직접 설치</b>해야 합니다. <b className="font-black text-stone-800">Claude 데스크톱 앱의 Cowork를 설치 도우미</b>로 함께 켜놓고 시작해주세요.
           </p>
+          <p className="text-xs font-black text-stone-400 tracking-widest uppercase mb-2">터미널 여는 방법</p>
+          <ul className="flex flex-col gap-1.5 text-sm text-stone-600 font-medium mb-5">
+            <li className="flex gap-2">
+              <span className="text-stone-300 flex-shrink-0">—</span>Windows: 화면 하단 <b className="font-black text-stone-800">검색</b> 아이콘 클릭 → <b className="font-black text-stone-800">&ldquo;Windows PowerShell&rdquo;</b> 입력 → 뜨는 앱 클릭
+            </li>
+            <li className="flex gap-2">
+              <span className="text-stone-300 flex-shrink-0">—</span>Mac: <b className="font-black text-stone-800">Spotlight 검색</b>(Cmd + Space) → <b className="font-black text-stone-800">&ldquo;터미널&rdquo;</b> 입력 → 뜨는 앱 클릭
+            </li>
+          </ul>
 
           <p className="text-xs font-black text-stone-400 tracking-widest uppercase mb-3">0단계 · Cowork를 설치 도우미로 켜두기</p>
           <ul className="flex flex-col gap-2 text-sm text-stone-600 font-medium mb-4">
@@ -145,7 +153,7 @@ export default function PrepPage() {
           </div>
 
           <p className="text-sm text-stone-600 font-medium mb-4 flex gap-2">
-            <span className="text-stone-300 flex-shrink-0">—</span>화면에 <b className="font-black text-stone-800">&ldquo;Claude Code successfully installed!&rdquo;</b> 같은 설치 성공 메시지가 뜨면 끝입니다. 바로 이어서 버전을 확인하거나 로그인해보지 않으셔도 됩니다 — 설치 직후엔 확인이 안 되는 것처럼 보일 때가 있는데, 그래도 실제로는 정상적으로 설치된 경우가 대부분입니다.
+            <span className="text-stone-300 flex-shrink-0">—</span>화면에 <b className="font-black text-stone-800">&ldquo;Claude Code successfully installed!&rdquo;</b> 같은 설치 성공 메시지가 뜨면 끝입니다.
           </p>
 
           <p className="text-xs font-black text-stone-400 tracking-widest uppercase mb-3">에러가 나면</p>
