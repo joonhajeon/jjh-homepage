@@ -7,8 +7,11 @@ export default function PrepPage() {
       <h1 className="text-4xl font-black text-stone-900 mb-3 tracking-tight break-keep">
         수업 전, 이 5가지만 설치해주세요
       </h1>
+      <p className="text-stone-500 font-medium break-keep">
+        수업의 원활한 진행을 위해 아래 프로그램들을 미리 설치해 오시면 좋습니다. 순서대로 하시면 20분이면 충분합니다.
+      </p>
       <p className="text-stone-500 mb-14 font-medium break-keep">
-        당일 실습 시간을 확보하기 위한 최소 준비물입니다. 순서대로 하시면 20분이면 충분합니다.
+        설치 중 막히시면 언제든 Cowork에 물어보시거나 저에게 회신 주세요. 다만 당일은 2시간이라는 짧은 시간 안에 진행되는 만큼, 설치가 안 된 상태로 오시면 일부 실습 참여가 어려울 수 있는 점은 양해 부탁드립니다.
       </p>
 
       <div className="flex flex-col gap-6">
